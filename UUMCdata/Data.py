@@ -93,7 +93,7 @@ class Data(object):
 
     def to_dataframe(self):
         '''Casts the current Data object as a pandas DataFrame'''
-        return _to_dataframe(interactive=True)
+        return self._to_dataframe(interactive=True)
 
     def _get_regressors(self):
         return self.data
